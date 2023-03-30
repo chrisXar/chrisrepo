@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/chrisXar/chrisrepo.git
     targetRevision: dev
-    path: manifiestos-kubernetes/1
+    path: manifiestos-kubernetes/1/pod
   destination: 
     server: https://kubernetes.default.svc
     namespace: chris
