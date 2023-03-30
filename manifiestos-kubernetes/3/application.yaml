@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: daemon-set
+  name: nginx-daemon-set
   namespace: argocd
 spec:
   project: default
