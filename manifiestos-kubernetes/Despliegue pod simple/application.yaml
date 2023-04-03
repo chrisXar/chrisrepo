@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-pod
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/chrisXar/chrisrepo.git
+    targetRevision: dev
+    path: manifiestos-kubernetes/Despliegue pod simple/pod
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: chris
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: false
+      prune: false
