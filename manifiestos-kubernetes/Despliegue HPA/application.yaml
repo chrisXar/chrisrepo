@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: apache-HPA
+  name: apache-hpa
   namespace: argocd
 spec:
   project: default
